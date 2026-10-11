@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>かぞく | Keluargaku</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="steps" aria-label="Halaman">
+  <button data-go="1">1 · Salam</button>
+  <button data-go="2">2 · Bagan keluarga</button>
+  <button data-go="3">3 · Sifat dan kesan</button>
+</nav>
+
+<!-- HALAMAN 1: SALAM -->
+<section class="page cover" id="page1">
+  <button class="cover-card" data-go="2" aria-label="Mulai">
+    <span class="cover-bg" aria-hidden="true">かぞく</span>
+    <span class="cover-jp jp">おはよう ございます。</span>
+    <span class="cover-ro">Ohayou gozaimasu.</span>
+    <span class="cover-id">Selamat pagi.</span>
+    <span class="cover-jp2 jp">これは わたしの かぞくです。</span>
+    <span class="cover-ro">Kore wa watashi no kazoku desu.</span>
+    <span class="cover-id">Ini keluargaku.</span>
+    <span class="cover-cta">Klik untuk mulai</span>
+  </button>
+</section>
+
+<!-- HALAMAN 2: BAGAN -->
+<section class="page" id="page2" hidden>
+  <header class="page-head">
+    <h1 class="jp">わたしの かぞく</h1>
+    <p class="ro">Watashi no kazoku · Keluargaku</p>
+    <p class="jp sub">かぞくは ろくにんです。<span>Kazoku wa rokunin desu. Keluargaku ada enam orang.</span></p>
+  </header>
+
+  <div class="tree" id="tree"></div>
+  <p class="hint">Klik salah satu anggota untuk melihat sifatnya.</p>
+
+  <div class="nav">
+    <button class="btn ghost" data-go="1">Kembali</button>
+    <button class="btn" data-go="3">Lanjut</button>
+  </div>
+</section>
+
+<!-- HALAMAN 3: SIFAT DAN KESAN -->
+<section class="page" id="page3" hidden>
+  <header class="page-head">
+    <h1 class="jp">せいかくと いんしょう</h1>
+    <p class="ro">Seikaku to inshou · Sifat dan kesan</p>
+  </header>
+
+  <div class="picker" id="picker" role="tablist" aria-label="Pilih anggota keluarga"></div>
+
+  <article class="detail" id="detail" aria-live="polite"></article>
+
+  <div class="nav">
+    <button class="btn ghost" id="prev">Sebelumnya</button>
+    <button class="btn" id="next">Selanjutnya</button>
+  </div>
+  <p class="foot-link"><button class="link" data-go="2">Kembali ke bagan</button></p>
+</section>
+
+<footer>
+  <p>Tugas Bahasa Jepang · Materi Kazoku · Dibuat oleh: <strong>(Irdina Putri A)</strong></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
